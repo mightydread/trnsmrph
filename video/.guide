@@ -1,0 +1,9 @@
+WEBM:
+
+ffmpeg -y -i VIDEOFILE -c:v libvpx-vp9 -b:v 2M -pass 1 -c:a libopus -f webm /dev/null && \
+ffmpeg -i VIDEOFILE -c:v libvpx-vp9 -b:v 2M -pass 2 -c:a libopus video.webm
+
+MP4
+
+ffmpeg -y -i VIDEOFILE -c:v libx264 -b:v 2000k -preset slower -profile:v baseline -pass 1 -c:a aac -b:a 128k -strict -2 -f mp4 /dev/null && \
+ffmpeg -i VIDEOFILE -c:v libx264 -b:v 2000k -preset slower -profile:v baseline -pass 2 -c:a aac -b:a 128k -strict -2 video.mp4
