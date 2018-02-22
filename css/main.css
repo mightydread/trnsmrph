@@ -17,7 +17,9 @@ html {
     font-family: 'Press Start 2P', cursive;
     text-align: center;
 }
-
+#logo {
+  font-size: 5em;
+}
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
