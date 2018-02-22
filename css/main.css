@@ -19,10 +19,14 @@ html {
 }
 #logo {
   font-size: 5em;
+  margin-left: 0.5em;
   /* position: fixed; */
   /* top:0; */
   /* left:0; */
 
+}
+#txt {
+  margin-left: 2.5em;
 }
 video#bgvid {
     position: fixed;
