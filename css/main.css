@@ -15,10 +15,14 @@ html {
     font-size: 1em;
     line-height: 1.4;
     font-family: 'Press Start 2P', cursive;
-    text-align: center;
+    /* text-align: center; */
 }
 #logo {
   font-size: 5em;
+  /* position: fixed; */
+  /* top:0; */
+  /* left:0; */
+
 }
 video#bgvid {
     position: fixed;
